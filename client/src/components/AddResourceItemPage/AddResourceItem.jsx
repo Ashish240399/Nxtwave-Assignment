@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import validator from "validator";
-import "AddItem.css";
+import "./AddItem.css";
 import "react-toastify/dist/ReactToastify.css";
 import { useNavigate } from "react-router-dom";
 const AddResourceItem = () => {
@@ -67,6 +67,7 @@ const AddResourceItem = () => {
         <div className="left">
           <h2>Item Details</h2>
           <form onSubmit={handleSubmit}>
+            <p>ITEM NAME</p>
             <input
               value={form.title}
               onChange={handleChange}
@@ -74,6 +75,7 @@ const AddResourceItem = () => {
               name="title"
               required
             />
+            <p>LINK</p>
             <input
               value={form.link}
               onChange={handleChange}
@@ -81,6 +83,7 @@ const AddResourceItem = () => {
               name="link"
               required
             />
+            <p>RESOURCE NAME</p>
             <input
               value={form.resource}
               onChange={handleChange}
@@ -88,6 +91,7 @@ const AddResourceItem = () => {
               name="resource"
               required
             />
+            <p>DESCRIPTION</p>
             <textarea
               value={form.description}
               onChange={handleChange}
@@ -96,7 +100,7 @@ const AddResourceItem = () => {
               rows="3"
               required
             ></textarea>
-            <button type="submit">Create</button>
+            <button type="submit">CREATE</button>
           </form>
         </div>
         <div className="right">

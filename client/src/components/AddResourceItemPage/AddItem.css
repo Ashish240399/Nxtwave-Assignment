@@ -1,0 +1,29 @@
+.main-div {
+  display: flex;
+}
+form {
+  width: 350px;
+}
+form > p {
+  margin-top: 30px;
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: gray;
+  text-align: left;
+}
+form > input,
+textarea {
+  width: 100%;
+  padding: 10px;
+}
+form > button {
+  padding: 15px 20px;
+  background-color: blue;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin-top: 30px;
+}
+.right {
+  margin-left: 300px;
+}
