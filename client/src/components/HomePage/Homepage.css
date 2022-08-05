@@ -1,0 +1,63 @@
+.btn {
+  width: 200px;
+  border: 1px solid rgb(217, 217, 217);
+  padding: 15px;
+  font-size: 15px;
+}
+#blue {
+  background-color: #0b69ff;
+  color: white;
+}
+.main-body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.main-body > div {
+  padding: 20px;
+  border: 1px solid rgb(198, 198, 198);
+  background-color: white;
+  border-radius: 8px;
+}
+.main-body > div > div:nth-child(2) {
+  text-align: left;
+  margin-top: 20px;
+}
+.main-body > div > div > div:nth-child(1) {
+  width: 50px;
+  height: 50px;
+  border: 2px solid rgb(200, 200, 200);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-body > div > div > div:nth-child(2) {
+  text-align: left;
+  margin-left: 15px;
+}
+.main-body > div > div > div:nth-child(2) > p {
+  line-height: 4px;
+  margin-top: 12px;
+}
+.main-body > div > div > div:nth-child(2) > p:nth-child(1) {
+  weight: 500;
+  font-size: 18px;
+}
+.main-body > div > div > div > img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.main-body > div > div:nth-child(1) {
+  display: flex;
+}
+.input-container {
+  display: flex;
+  justify-content: left;
+  margin: 40px 0px;
+}
+.input-container > input {
+  width: 53%;
+  padding: 10px;
+}

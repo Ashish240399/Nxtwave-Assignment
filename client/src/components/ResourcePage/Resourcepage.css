@@ -1,0 +1,67 @@
+.image-div {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(220, 218, 218);
+  border-radius: 50%;
+  margin-right: 30px;
+}
+.image-div > img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.header-title {
+  display: flex;
+  margin-bottom: 40px;
+}
+.title-div {
+  margin-top: -17px;
+}
+.title-div > p {
+  font-size: 26px;
+  weight: 600;
+}
+.update-btn-div {
+  display: flex;
+  justify-content: left;
+  margin-top: 40px;
+}
+.input-sort {
+  display: flex;
+  margin: 40px 0px;
+  justify-content: space-between;
+}
+.input-sort > div:nth-child(1) {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  font-size: 26px;
+}
+.input-sort > div:nth-child(2) {
+  display: flex;
+  flex: 2;
+}
+.input-sort > div:nth-child(2) > input {
+  width: 100%;
+  padding: 10px;
+}
+table {
+  border: 2px solid #ddd;
+  width: 100%;
+}
+th,
+td {
+  border-bottom: 2px solid #ddd;
+  height: 60px;
+  text-align: left;
+  padding-right: 100px;
+}
+/* th:nth-child(2),
+th:nth-child(3),
+th:nth-child(4) {
+  width: 300px;
+} */

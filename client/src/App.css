@@ -1,0 +1,10 @@
+.App {
+  text-align: center;
+}
+body {
+  background-color: rgb(247, 247, 247);
+}
+.body-container {
+  width: 75%;
+  margin: auto;
+}
