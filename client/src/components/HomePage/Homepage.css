@@ -61,3 +61,34 @@
   width: 53%;
   padding: 10px;
 }
+@media only screen and (min-width: 660px) and (max-width: 1024px) {
+  .btn {
+    width: 150px;
+    border: 1px solid rgb(217, 217, 217);
+    padding: 12px;
+    font-size: 15px;
+  }
+  .main-body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 659px) {
+  .btn {
+    width: 100px;
+    border: 1px solid rgb(217, 217, 217);
+    padding: 12px;
+    font-size: 15px;
+  }
+  .main-body {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .input-container > input {
+    width: 90%;
+    padding: 10px;
+    margin: auto;
+  }
+}

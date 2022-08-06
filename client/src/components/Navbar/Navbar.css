@@ -7,7 +7,16 @@
   margin-bottom: 50px;
   background-color: white;
   height: 72px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 .nav-logo {
   width: 83px;
+}
+.navbar-inner {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
 }

@@ -4,7 +4,10 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { fetchItem, filterItem } from "../Redux/Actions/AllResourceAction";
-import { resourceDetails } from "../Redux/Actions/ResourcePageAction";
+import {
+  resourceDetails,
+  resourceItem,
+} from "../Redux/Actions/ResourcePageAction";
 import SearchIcon from "@mui/icons-material/Search";
 const Homepage = () => {
   const dispatch = useDispatch();
@@ -30,6 +33,7 @@ const Homepage = () => {
     );
     const res = await data.json();
     dispatch(resourceDetails(res));
+    dispatch(resourceItem(res.resource_items));
     navigate("/resource-details");
   };
   const changeTags = (tag) => {
@@ -89,8 +93,14 @@ const Homepage = () => {
                   <img src={el.icon_url} alt="Logo" />
                 </div>
                 <div>
-                  <p>{el.title}</p>
-                  <p>{el.category}</p>
+                  <p>
+                    {el.title?.length > 14
+                      ? el.title.substring(0, 14) + "..."
+                      : el.title}
+                  </p>
+                  <p style={{ fontSize: "13px", color: "gray" }}>
+                    {el.category}
+                  </p>
                 </div>
               </div>
               <div>
@@ -98,6 +108,7 @@ const Homepage = () => {
                   {el.link}
                 </a>
                 <p
+                  style={{ fontSize: "13px", color: "gray" }}
                   onClick={() => {
                     gotoDetailsPage(el.id);
                   }}

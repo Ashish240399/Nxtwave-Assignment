@@ -1,24 +1,31 @@
 .main-div {
   display: flex;
 }
+.left {
+  flex: 1;
+}
+.right {
+  flex: 1;
+}
 form {
-  width: 350px;
+  width: 100%;
 }
 form > p {
   margin-top: 30px;
   margin-bottom: 8px;
   font-size: 15px;
-  color: gray;
+  color: rgb(114, 114, 114);
   text-align: left;
 }
 form > input,
 textarea {
   width: 100%;
   padding: 10px;
+  border: 2px solid rgb(195, 194, 194);
 }
 form > button {
   padding: 15px 20px;
-  background-color: blue;
+  background-color: rgb(75, 75, 252);
   border: none;
   border-radius: 5px;
   color: white;
@@ -26,4 +33,34 @@ form > button {
 }
 .right {
   margin-left: 300px;
+}
+.right {
+  width: 100%;
+}
+.right > img {
+  width: 100%;
+}
+.box-description {
+  font-size: 12px;
+  font-weight: 600;
+}
+@media only screen and (min-width: 660px) and (max-width: 1024px) {
+  .right {
+    margin-left: 60px;
+  }
+  .right {
+    width: 120%;
+  }
+  .right > img {
+    width: 300px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 659px) {
+  .right {
+    flex: 0;
+    margin-left: 17px;
+  }
+  .left {
+    flex: 1;
+  }
 }

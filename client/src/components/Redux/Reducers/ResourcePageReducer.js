@@ -1,6 +1,7 @@
 import {
   DELETE,
   RESOURCE_DETAILS,
+  RESOURCE_ITEM,
   SORT_ITEM,
 } from "../Actions/ResourcePageAction";
 
@@ -14,7 +15,13 @@ export const resourceDetailsReducer = (state = init, { type, payload }) => {
       return {
         ...state,
         resource_details: payload,
-        resource_item: payload.resource_items,
+      };
+    }
+    case RESOURCE_ITEM: {
+      console.log(payload);
+      return {
+        ...state,
+        resource_item: payload,
       };
     }
     case SORT_ITEM: {

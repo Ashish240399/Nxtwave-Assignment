@@ -49,6 +49,9 @@
   width: 100%;
   padding: 10px;
 }
+.btns-div > .success {
+  margin-right: 20px;
+}
 table {
   border: 2px solid #ddd;
   width: 100%;
@@ -65,3 +68,29 @@ th:nth-child(3),
 th:nth-child(4) {
   width: 300px;
 } */
+.disabled-btn {
+  pointer-events: none;
+}
+
+@media only screen and (min-width: 660px) and (max-width: 1024px) {
+  th,
+  td {
+    border-bottom: 2px solid #ddd;
+    height: 60px;
+    text-align: left;
+    padding-right: 30px;
+  }
+  .btns-div > .success {
+    margin-right: 10px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 660px) {
+  th,
+  td {
+    border-bottom: 2px solid #ddd;
+    border-right: 2px solid #ddd;
+    height: 60px;
+    text-align: left;
+    padding-right: 1px;
+  }
+}

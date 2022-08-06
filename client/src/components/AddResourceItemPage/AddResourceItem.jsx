@@ -5,6 +5,7 @@ import validator from "validator";
 import "./AddItem.css";
 import "react-toastify/dist/ReactToastify.css";
 import { useNavigate } from "react-router-dom";
+import office from "../image/office.jpg";
 const AddResourceItem = () => {
   const navigate = useNavigate();
   const [form, setForm] = useState({
@@ -67,7 +68,7 @@ const AddResourceItem = () => {
         <div className="left">
           <h2>Item Details</h2>
           <form onSubmit={handleSubmit}>
-            <p>ITEM NAME</p>
+            <p className="box-description">ITEM NAME</p>
             <input
               value={form.title}
               onChange={handleChange}
@@ -75,7 +76,7 @@ const AddResourceItem = () => {
               name="title"
               required
             />
-            <p>LINK</p>
+            <p className="box-description">LINK</p>
             <input
               value={form.link}
               onChange={handleChange}
@@ -83,7 +84,7 @@ const AddResourceItem = () => {
               name="link"
               required
             />
-            <p>RESOURCE NAME</p>
+            <p className="box-description">RESOURCE NAME</p>
             <input
               value={form.resource}
               onChange={handleChange}
@@ -91,7 +92,7 @@ const AddResourceItem = () => {
               name="resource"
               required
             />
-            <p>DESCRIPTION</p>
+            <p className="box-description">DESCRIPTION</p>
             <textarea
               value={form.description}
               onChange={handleChange}
@@ -104,7 +105,7 @@ const AddResourceItem = () => {
           </form>
         </div>
         <div className="right">
-          <img src="" alt="Image" />
+          <img src={office} alt="Image" />
         </div>
       </div>
       <ToastContainer />
